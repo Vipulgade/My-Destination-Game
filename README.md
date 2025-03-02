@@ -1,70 +1,52 @@
-# Getting Started with Create React App
+# Globetrotter Challenge – The Ultimate Travel Guessing Game
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+🧩 **The Globetrotter Challenge** is a full-stack travel guessing game where users receive cryptic clues about a famous destination and must choose the correct answer from multiple options. When they answer, they unlock fun facts, trivia, and surprises about the destination—all while tracking their score and challenging friends!
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## Project Overview
 
-### `npm start`
+Globetrotter challenges players to guess the destination based on 1–2 random clues. After answering, the app provides immediate feedback with funky animations:
+- **Correct Answer:** Confetti animation + fun fact reveal.
+- **Incorrect Answer:** Sad-face animation + fun fact reveal.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Additional features include:
+- A dynamic “Challenge a Friend” option that registers users, generates an invite link with a dynamic image (for WhatsApp sharing), and displays the invitee’s score before play.
+- A backend-stored dataset (expanded to 100+ destinations with AI tools) that includes clues, fun facts, and trivia to keep the answers secure from client-side exposure.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+---
 
-### `npm test`
+## Tech Stack
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- **Frontend:**  
+  - React  
+  - Material UI  
+  - Axios
 
-### `npm run build`
+- **Backend:**  
+  - Node.js  
+  - Express
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- **Database:**  
+  - [Your chosen database, e.g., MongoDB or PostgreSQL]  
+  *(The dataset is stored on the backend to prevent users from accessing it via source code.)*
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- **AI Integration:**  
+  - Utilized AI tools (ChatGPT, OpenAI API, web scraping) to expand the starter dataset to 100+ destinations.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- **Deployment:**  
+  - Frontend deployed on [Vercel/Netlify]  
+  - Backend deployed on [Railway/Heroku]
 
-### `npm run eject`
+---
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Setup & Installation
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Prerequisites
+- Node.js (>=14.x)
+- npm or yarn
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+### Clone the Repository
+```bash
+git clone https://github.com/yourusername/globetrotter-challenge.git
+cd globetrotter-challenge
